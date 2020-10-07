@@ -1,0 +1,41 @@
+$small-shadow: 0 0 10px #00000080;
+$big-shadow: 0 0 30px #00000080;
+
+
+// COLORS 
+$primary-color: #04396B;
+$secondary-color: #a2adb8;
+
+$primary-accent: #389583;
+$secondary-accent: #8DE4AF;
+
+$primary-bg: white;
+$secondary-bg: white;
+
+// PALETTE 
+
+// #04396B #389583 #5CDB94 #8DE4AF #EDF5E0
+
+// TYPOGRAPHY 
+
+h1 {
+  color: tomato;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: $primary-accent;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
