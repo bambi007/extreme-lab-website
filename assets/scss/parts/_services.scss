@@ -1,38 +1,4 @@
 #services {
-  background: #8DE4AF;
-
-
-  .service {
-    background: white;
-    padding: 20px;
-    height: 400px;
-    width: 300px;
-    margin: 0 auto;
-    position: relative;
-    transition: top ease 0.5s, all 0.5s;
-    top: 0;
-    box-shadow: $big-shadow;
-
-    &:hover {
-      top: -20px;
-      box-shadow: 0 20px 30px #000000ad;
-      background: #389583;
-
-      .icon svg {
-        fill: #04396B;
-      }
-
-    }
-
-    .icon {
-      height: 70px;
-      width: 70px;
-      margin-bottom: 20px;
-
-      svg {
-        fill: #389583;
-        transition: all 0.5s;
-      }
-    }
-  }
+  background: lightblue;
+  // text-align: center;
 }
