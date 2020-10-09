@@ -1,27 +1,41 @@
-.driver {
+#driver {
   padding-top: 0;
   height: 800px;
-  position: relative;
-  background-image: url(../images/tyler-franta-iusJ25iYu1c-unsplash.jpg);
-  background-position: center, center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  // min-height: 100vh;
-  background-attachment: fixed;
   box-shadow: $small-shadow;
 
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(transparent, #389583);
-    background-attachment: fixed;
-  }
 
   @media (max-width: 768px) {
     height: 100vh;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+
+    .swiper-wrapper {
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        // background-image: radial-gradient(transparent, #389583);
+        background: #389582d7;
+        // background-attachment: fixed;
+      }
+
+      .swiper-slide {
+        background-position: center, center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+
+      }
+    }
+
   }
 }

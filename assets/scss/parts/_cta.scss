@@ -1,0 +1,21 @@
+.cta {
+  height: 200px;
+  box-shadow: $small-shadow;
+  position: relative;
+  background-image: url(../images/tyler-franta-iusJ25iYu1c-unsplash.jpg);
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #04396bda;
+    z-index: 0;
+  }
+}

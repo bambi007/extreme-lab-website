@@ -145,34 +145,41 @@ nav #menu.menu-open {
           transform: translateY(500px);
 }
 
-.driver {
+#driver {
   padding-top: 0;
   height: 800px;
-  position: relative;
-  background-image: url(../images/tyler-franta-iusJ25iYu1c-unsplash.jpg);
-  background-position: center, center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   -webkit-box-shadow: 0 0 10px #00000080;
           box-shadow: 0 0 10px #00000080;
 }
 
-.driver:before {
+@media (max-width: 768px) {
+  #driver {
+    height: 100vh;
+  }
+}
+
+#driver .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+#driver .swiper-container .swiper-wrapper:after {
   content: "";
   position: absolute;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(transparent, #389583);
-  background-attachment: fixed;
+  background: #389582d7;
 }
 
-@media (max-width: 768px) {
-  .driver {
-    height: 100vh;
-  }
+#driver .swiper-container .swiper-wrapper .swiper-slide {
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
 }
 
 #about {
@@ -270,13 +277,25 @@ nav #menu.menu-open {
 
 #services {
   background: #8DE4AF;
+  -webkit-box-shadow: 0 0 10px #00000080;
+          box-shadow: 0 0 10px #00000080;
+}
+
+#services .column {
+  width: 380px;
+}
+
+@media (max-width: 320px) {
+  #services .column {
+    width: 300px;
+  }
 }
 
 #services .service {
   background: white;
   padding: 20px;
   height: 400px;
-  width: 300px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   -webkit-transition: top ease 0.5s, all 0.5s;
@@ -309,6 +328,105 @@ nav #menu.menu-open {
   transition: all 0.5s;
 }
 
+#services .services {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+@media (min-width: 1200px) {
+  #services .services {
+    overflow: visible;
+  }
+}
+
+@media (max-width: 1200px) {
+  #services .services {
+    width: 100%;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  #services .services {
+    padding-right: 20px;
+  }
+}
+
+#services .services .swiper-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+}
+
+@media (max-width: 320px) {
+  #services .services .swiper-wrapper {
+    padding: 10px;
+  }
+}
+
+.cta {
+  height: 200px;
+  -webkit-box-shadow: 0 0 10px #00000080;
+          box-shadow: 0 0 10px #00000080;
+  position: relative;
+  background-image: url(../images/tyler-franta-iusJ25iYu1c-unsplash.jpg);
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #04396bda;
+  z-index: 0;
+}
+
+#portfolio .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#portfolio .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#portfolio .gallery .gallery-item {
+  width: calc(100% / 3);
+  height: 300px;
+  padding: 20px 10px;
+}
+
+@media (max-width: 1024px) {
+  #portfolio .gallery .gallery-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  #portfolio .gallery .gallery-item {
+    width: 100%;
+  }
+}
+
+#portfolio .gallery .gallery-item .image {
+  background: ghostwhite;
+  width: 100%;
+  height: 100%;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -324,7 +442,6 @@ html {
 }
 
 body {
-  background: #389583;
   font-family: 'Quicksand', sans-serif;
   color: #04396B;
 }
@@ -351,33 +468,33 @@ section {
   }
 }
 
-.column {
-  margin-bottom: 60px;
-  text-align: left;
+.half {
+  padding: 10px;
+  width: 50%;
 }
 
 @media (max-width: 768px) {
-  .column {
+  .half {
     width: 100%;
     padding: 0;
   }
 }
 
-.column.half {
-  padding: 10px;
-  width: 50%;
-}
-
-.column.half:nth-of-type(odd) {
+.half:nth-of-type(odd) {
   padding-left: 0;
 }
 
-.column.half:nth-of-type(even) {
+.half:nth-of-type(even) {
   padding-right: 0;
 }
 
-.column.third {
-  padding: 10px;
+.third {
+  padding: 20px;
   width: calc(100% / 3);
+}
+
+.column {
+  margin-bottom: 40px;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */

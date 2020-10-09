@@ -1,17 +1,34 @@
 #services {
   background: #8DE4AF;
+  box-shadow: $small-shadow;
 
+  .column {
+    width: 380px;
+    // width: calc(100% / 3);
+    // padding: 10px;
+
+    // @media (max-width:1024px) {
+    //   width: 300px;
+
+    // }
+
+    @media (max-width:320px) {
+      width: 300px;
+    }
+
+  }
 
   .service {
     background: white;
     padding: 20px;
     height: 400px;
-    width: 300px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     transition: top ease 0.5s, all 0.5s;
     top: 0;
     box-shadow: $big-shadow;
+
 
     &:hover {
       top: -20px;
@@ -32,6 +49,40 @@
       svg {
         fill: #389583;
         transition: all 0.5s;
+      }
+    }
+  }
+
+  .services {
+    margin: 0 auto;
+    width: 1200px;
+    // height: 500px;
+    // margin-left: -20px;
+    // width: calc(100% + 50px);
+    // margin-right: -20px;
+
+    @media (min-width:1200px) {
+      overflow: visible;
+    }
+
+    @media (max-width:1200px) {
+      width: 100%;
+      padding-right: 40px;
+    }
+
+    @media (max-width:320px) {
+      padding-right: 20px;
+    }
+
+
+
+    .swiper-wrapper {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px;
+
+      @media (max-width:320px) {
+        padding: 10px;
       }
     }
   }
