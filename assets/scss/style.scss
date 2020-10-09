@@ -24,7 +24,7 @@ html {
 
 body {
   font-family: 'Quicksand', sans-serif;
-  color: $primary-color;
+  color: $palette-1;
 }
 
 section {
@@ -41,10 +41,6 @@ section {
 
   @media (max-width: 1200px) {
     width: 100%;
-  }
-
-  @media (max-width: 768px) {
-    // padding: 10px;
   }
 }
 
@@ -75,4 +71,19 @@ section {
   margin-bottom: 40px;
   text-align: left;
 
+}
+
+.swiper-pagination-bullet {
+  background: $brightest-color;
+  margin: 10px !important
+}
+
+.swiper-scrollbar {
+  margin-bottom: 20px !important;
+  opacity: 1 !important;
+
+
+  .swiper-scrollbar-drag {
+    background: $brightest-color;
+  }
 }

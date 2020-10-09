@@ -1,10 +1,10 @@
 #about {
 
-  background: white;
+  background: $brightest-color;
 
   .image {
     position: relative;
-    background-image: url(../images/tyler-franta-iusJ25iYu1c-unsplash.jpg);
+    background-image: url(../images/dylan-gillis-KdeqA3aTnBY-unsplash.jpg);
     background-position: center, center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,7 @@
       width: 90%;
       height: 90%;
       border: 2px solid;
-      border-image-source: linear-gradient(45deg, #8DE4AF, #389583);
+      border-image-source: $border-image;
       border-image-slice: 1;
     }
   }

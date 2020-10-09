@@ -1,5 +1,5 @@
 #services {
-  background: #8DE4AF;
+  background: $palette-4;
   box-shadow: $small-shadow;
 
   .column {
@@ -12,7 +12,7 @@
   }
 
   .service {
-    background: white;
+    background: $brightest-color;
     padding: 20px;
     height: 400px;
     width: 100%;
@@ -25,11 +25,11 @@
 
     &:hover {
       top: -20px;
-      box-shadow: 0 20px 30px #000000ad;
-      background: #389583;
+      box-shadow: $big-drop-shadow;
+      background: $palette-2;
 
       .icon svg {
-        fill: #04396B;
+        fill: $palette-1;
       }
 
     }
@@ -40,7 +40,7 @@
       margin-bottom: 20px;
 
       svg {
-        fill: #389583;
+        fill: $palette-2;
         transition: all 0.5s;
       }
     }

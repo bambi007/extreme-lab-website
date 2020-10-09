@@ -1,14 +1,10 @@
-$bars-color: white;
-$burger-color: goldenrod;
-$burger-hover: black;
-
 .burger {
   display: none;
   background: none;
   width: 40px;
   height: 40px;
   border-radius: 6px;
-  border: 2px solid $bars-color;
+  border: 2px solid $brightest-color;
   transition: 0.4s;
   cursor: pointer;
 
@@ -21,7 +17,7 @@ $burger-hover: black;
     .bar {
       position: absolute;
       width: 100%;
-      background: $bars-color;
+      background: $brightest-color;
       transition: 0.4s;
       height: 2px;
       border-radius: 1px;

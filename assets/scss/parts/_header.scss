@@ -1,6 +1,6 @@
 #top-bar {
-  background: #05386b;
-  background-image: linear-gradient(to right, #05386b, #389583);
+  background: $palette-1;
+  background-image: $gradient-background;
   box-shadow: $small-shadow;
   position: fixed;
   z-index: 20;
@@ -9,40 +9,74 @@
   transition: 0.3s;
 
   &.small {
-    height: 70px;
+    height: 65px;
 
     .container {
       transition: 0.3s ease-in-out;
       padding: 5px 20px;
+    }
+
+    @media (max-width: 768px) {
+      height: 90px;
+
+      .container {
+        padding: 20px;
+      }
     }
   }
 
   @media (max-width: 768px) {
     height: 90px;
   }
-
 }
 
 nav {
-  color: white;
+  color: $brightest-color;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  transition: opacity 0.5s;
+  transition: 0.5s;
 
   .logo {
-    height: 50px;
+    height: 45px;
+    margin-left: -30px;
     display: flex;
     align-items: center;
+
+    .logo-image {
+      transform: scale(0.4);
+
+      path {
+        opacity: 0.8;
+      }
+
+      .path-1 {
+        fill: $palette-3;
+      }
+
+      .path-2 {
+        fill: $palette-5;
+      }
+
+      .path-3 {
+        fill: $palette-4;
+      }
+
+      .path-4 {
+        fill: $palette-2;
+      }
+    }
 
     span {
       display: inline-block;
       font-size: 20px;
       font-weight: 700;
-      color: #EDF5E0;
+      color: $palette-5;
+      margin-left: -20px;
 
       span {
-        color: #5CDB94;
+        color: $palette-3;
+        margin-left: 0;
       }
     }
   }
@@ -63,7 +97,7 @@ nav {
       width: 100%;
       height: 100vh;
       padding-top: 100px;
-      background: #389583;
+      background: $palette-2;
       text-align: center;
       visibility: visible;
       transition: all 0.5s;
@@ -75,7 +109,7 @@ nav {
         &:after {
           content: '';
           display: block;
-          border: 1px solid #EDF5E0;
+          border: 1px solid $palette-5;
           width: 40px;
           margin: 20px auto;
           border-radius: 1px;
@@ -86,7 +120,7 @@ nav {
 
     a {
       padding: 20px;
-      color: white;
+      color: $brightest-color;
       text-transform: uppercase;
       position: relative;
       top: 0;

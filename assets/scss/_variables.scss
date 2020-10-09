@@ -1,31 +1,70 @@
-$small-shadow: 0 5px 10px #00000080;
+$small-shadow: 0 5px 10px #00000044;
+$big-drop-shadow: 0 20px 30px #000000ad;
 $big-shadow: 0 0 30px #00000080;
 
 
 // COLORS 
-$primary-color: #04396B;
-$secondary-color: #a2adb8;
+$brightest-color: #fff;
+$darkest-color: #181818;
 
-$primary-accent: #389583;
-$secondary-accent: #8DE4AF;
 
-$primary-bg: white;
-$secondary-bg: white;
+// PALETTE TURQ
 
-// PALETTE 
+$palette-1: #04396B;
+$palette-2: #389583;
+$palette-3: #5CDB94;
+$palette-4: #8DE4AF;
+$palette-5: #EDF5E0;
 
-// #04396B #389583 #5CDB94 #8DE4AF #EDF5E0
+// PALETTE SLEEK
+
+// $palette-1: #2C3532;
+// $palette-2: #106466;
+// $palette-3: #D8B08C;
+// $palette-4: #FFCB9B;
+// $palette-5: #D2E9E3;
+
+// PALETTE YELL
+
+// $palette-1: #001746;
+// $palette-2: #19435B;
+// $palette-3: #275C7A;
+// $palette-4: #F7A419;
+// $palette-5: #FFEF37;
+
+// PALETTE WARM
+
+// $palette-1: #5B1D46;
+// $palette-2: #CA2E34;
+// $palette-3: #FF5626;
+// $palette-4: #FFC400;
+// $palette-5: #ffe388;
+
+// PALETTE TECH
+
+// $palette-1: #000000;
+// $palette-2: #372E29;
+// $palette-3: #726255;
+// $palette-4: #ECB939;
+// $palette-5: #F0C75E;
+
+// ELEMENTS 
+
+$border-image: linear-gradient(45deg, $palette-4, $palette-2);
+$gradient-background: linear-gradient(to right, $palette-1, $palette-2);
+$footer-background: linear-gradient(to right, $palette-2, $palette-3);
+$gradient-button: linear-gradient(to right, $palette-2, $palette-5, $palette-3);
 
 // TYPOGRAPHY 
 
 h1 {
-  color: tomato;
+  font-size: 56px;
 }
 
 h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: $primary-accent;
+  color: $palette-2;
 }
 
 h3 {
