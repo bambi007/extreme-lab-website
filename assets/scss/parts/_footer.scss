@@ -1,0 +1,169 @@
+#contact {
+  // height: 300px;
+  background: #389583;
+  background-image: linear-gradient(to right, #05386b, #389583);
+  box-shadow: $small-shadow;
+  color: white;
+
+  .container {
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  .column {
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    .contact-box {
+      display: flex;
+
+      @media (max-width:425px) {
+        flex-direction: column;
+      }
+    }
+
+    .right-info {
+      width: 50%;
+    }
+
+    .left-info {
+      width: 50%;
+    }
+
+    .row {
+      padding-bottom: 10px;
+    }
+  }
+
+  .right {
+    width: 50%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+
+  h3 {
+    margin-bottom: 30px;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .company {
+    display: block;
+    color: #8DE4AF;
+  }
+
+
+  a {
+    color: white;
+    transition: ease 0.5s;
+
+    &:hover {
+      color: #8DE4AF;
+    }
+
+  }
+
+  .label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #8DE4AF;
+  }
+
+  .info {
+    color: white;
+  }
+
+
+  form {
+    .row {
+      margin-bottom: 10px;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      box-shadow: $small-shadow;
+    }
+
+    textarea {
+      border-radius: 5px;
+      width: 100%;
+      padding: 10px;
+      box-shadow: $small-shadow;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    input[type=button] {
+      width: auto;
+      background-image: linear-gradient(to right, #389583, #5CDB94);
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 10px 30px;
+      // transition: 0.5s background-image;
+      background-image: linear-gradient(to right, #389583, #8DE4AF, #389583);
+      background-size: 300% 100%;
+      transition: all .4s ease-in-out;
+      cursor: pointer;
+
+      @media (max-width: 425px) {
+        width: 100%;
+        padding: 20px 50px;
+        font-size: 20px;
+      }
+
+      &:hover {
+        background-position: 100% 0;
+      }
+    }
+  }
+
+  .copyright {
+    background: #04396B;
+    color: #EDF5E0;
+    box-shadow: $small-shadow;
+    font-size: 12px;
+
+    .container {
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #year {
+      color: #8DE4AF;
+      text-transform: uppercase;
+    }
+
+    .designed {
+      color: #8DE4AF;
+      text-transform: uppercase;
+
+      a {
+        text-transform: initial;
+      }
+    }
+  }
+}

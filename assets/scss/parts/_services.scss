@@ -4,13 +4,6 @@
 
   .column {
     width: 380px;
-    // width: calc(100% / 3);
-    // padding: 10px;
-
-    // @media (max-width:1024px) {
-    //   width: 300px;
-
-    // }
 
     @media (max-width:320px) {
       width: 300px;
@@ -56,14 +49,6 @@
   .services {
     margin: 0 auto;
     width: 1200px;
-    // height: 500px;
-    // margin-left: -20px;
-    // width: calc(100% + 50px);
-    // margin-right: -20px;
-
-    @media (min-width:1200px) {
-      overflow: visible;
-    }
 
     @media (max-width:1200px) {
       width: 100%;

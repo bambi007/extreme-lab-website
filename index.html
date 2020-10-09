@@ -13,7 +13,7 @@
 
 <body>
   <header id="home">
-    <div class="top-bar">
+    <div id="top-bar">
       <nav class="container">
         <div class="logo" data-aos="fade-right">
           <img src="assets/images/logo_small.png" alt="small logo"><span>Extreme<span>Lab</span></span>
@@ -22,13 +22,13 @@
           <a href="#about">
             <li>O nas</li>
           </a>
-          <a href="#">
+          <a href="#services">
             <li>Oferta</li>
           </a>
-          <a href="#">
+          <a href="#portfolio">
             <li>Realizacje</li>
           </a>
-          <a href="#">
+          <a href="#contact">
             <li>Kontakt</li>
           </a>
         </ul>
@@ -236,17 +236,74 @@
     </div>
   </section>
 
-  <!-- <section class="cta">
+  <section class="cta">
     <div class="container">
     </div>
-  </section> -->
+  </section>
 
   <footer id="contact">
-    <div class="container">footer</div>
+    <div class="container">
+      <div class="column left">
+        <h3>Agencja interaktywna <span class="company">Extreme Lab</span></h3>
+        <div class="contact-box">
+          <div class="left-info">
+            <div class="row">
+              <a href="tel:+48606369832"><span class="label">telefon</span> 606 369 832</a>
+            </div>
+            <div class="row">
+              <a href="mailto:biuro@extremelab.pl"><span class="label">e-mail</span> biuro@extremelab.pl</a>
+            </div>
+          </div>
+
+          <div class="right-info">
+            <div class="row">
+              <span class="info"><span class="label">NIP</span>678-276-37-83</span>
+            </div>
+            <div class="row">
+              <span class="info"><span class="label">Godziny pracy:</span>9:00 - 17:00</span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+      <div class="column right">
+        <h3>Skontaktuj się z nami</h3>
+        <form action="" method="post" id="message">
+          <div class="row">
+            <input type="name" placeholder="imię i nazwisko" required>
+          </div>
+          <div class="row">
+            <input type="email" name="email" id="email" placeholder="e-mail" required>
+          </div>
+          <div class="row">
+            <textarea name="message" id="message" rows="5" placeholder="wiadomość" required></textarea>
+          </div>
+          <div class="row">
+            <input type="button" value="Wyślij" form="message">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <span><span id="year"></span>Extreme Lab</span>
+        <span class="designed">Designed by: <a href="https://github.com/bambi007" target="blank">bambi007</a></span>
+      </div>
+    </div>
   </footer>
+
+
+  <!-- SCRIPTS  -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="assets/js/burger.js"></script>
+  <script src="assets/js/script.js"></script>
 
   <script>
     var mySwiper = new Swiper('.driver', {
@@ -281,7 +338,7 @@
         },
       })
     }
-
+    document.getElementById("year").innerHTML = (new Date().getFullYear() + " Copyright © ");
 
   </script>
 </body>
